@@ -1,3 +1,4 @@
+//搜索导航
 var oSearch = document.querySelector('#search');
 oSearch.onkeyup = function(event) {
 	if(event.keyCode === 13) {
@@ -6,8 +7,8 @@ oSearch.onkeyup = function(event) {
 	localStorage.searchTxt = this.value;
 }
 var oSearchText = document.querySelector(".search-text-img");
-oSearchText.onclick = function(event){
-	location.href = 'search.html?search_text=' + localStorage.searchTxt; 
+oSearchText.onclick = function(event) {
+	location.href = 'search.html?search_text=' + localStorage.searchTxt;
 }
 
 var oGoods = document.querySelector("#hot-goods");
@@ -62,4 +63,6 @@ myajax.get('http://h6.duchengjiu.top/shop/api_goods.php', {
 			</li>`;
 		}
 	});
+
+//回到顶部
 var retunrntop = new BackToTop("#returnTop");

@@ -7,38 +7,43 @@ html,body{
 	height: 100%;
 	background-color: #f4f4f6;
 }
-nav{
+.input-group{
+	width: 100%;
+	height: 5rem;
+}
+.search-nav{
 	width: 100%;
 	height: 5rem;
 	background-color: #cfdcfe;
 	position: relative;
 }
-nav div{
+.search-nav div{
 	float: left;
 }
-nav a img{
-	width: 1.8rem;
-	height: 1.8rem;
-}
-nav .return1{
+.search-nav .return1{
 	margin-top: 1.4rem;
 	margin-left: 0.8rem;
 	width: 10%;
 	height: 1.8rem;
-	filter:alpha(opacity=50);  
-	opacity: 0.5;
+	border-radius: 10px;
+	filter:alpha(opacity=70);  
+	opacity: 0.7;
+}
+.return1 a img{
+	width: 2.4rem;
+	height: 2.4rem;
 }
 .search-text{
 	margin: 8px;
 	margin-left: 0;
-	width: 72%;
+	width: 70%;
 	height: 3.6rem;
 	border-bottom: 1px solid #333;
-	filter:alpha(opacity=50);  
-	opacity: 0.5;
+	filter:alpha(opacity=60);  
+	opacity: 0.6;
 }
 .search-text input{
-	width: 90%;
+	width: 85%;
 	height:3.5rem ;
 	border: none;
 	font-size: 16px;
@@ -46,13 +51,18 @@ nav .return1{
 	background-color: #cfdcfe;
 	outline: none;
 }
+.search-text a img{
+	width: 1.8rem;
+	height: 1.8rem;
+}
 .searchage{
 	margin-top: 1.2rem;
 	margin-left: 1rem;
+	float: right;
 	width: 10%;
 	height: 3rem;
-	filter:alpha(opacity=50);  
-	opacity: 0.5;
+	filter:alpha(opacity=70);  
+	opacity: 0.7;
 }
 .searchage a img{
 	width: 2.2rem;
@@ -70,9 +80,9 @@ ul li{
 	overflow: hidden;
 }
 .product{
-	width: 90%;
+	width: 100%;
 	height: 8rem;
-	margin: 1rem;
+	margin: 0.5rem;
 }
 .product>div{
 	float: left;
@@ -86,19 +96,25 @@ ul li{
 	height: 8rem;
 }
 .product-particulars{
-	margin-left: 1rem;
-	width: 65%;
+	margin-left: 0.5rem;
+	width: 67%;
 }
 .product-particulars p{
+	margin-bottom: 0.5rem;
 	display: block;
 	margin-top: 0.2rem;
 	width: 100%;
-	height: 44px;
-	overflow: hidden;
-	font-size: 14px;
 	font-weight: 600;
 	color: #4b566a;
-	line-height: 20px;
+	
+	display: -webkit-box;    /*1.设置display类型为-webkit-box*/
+	font-size: 15px;
+	line-height: 22px;
+    overflow: hidden;        /*2.设置元素超出隐藏*/
+    text-overflow: ellipsis; /*3.设置超出样式为省略号*/
+    -webkit-line-clamp: 2;   /*4.设置2行应用省略*/
+    -webkit-box-orient: vertical;
+	height: 42px;
 }
 .product-particulars em{
 	font-size: 16px;
@@ -143,14 +159,14 @@ ul li{
 	position: fixed;
 	bottom: 10px;
 	right: 5px;
-	width: 50px;
-	height: 50px;
-	background-color: #999;
+	width: 32px;
+	height: 32px;
+	background-color: #fff;
 	border-radius: 50%;
 }
 .return-top img{
 	display: block;
 	margin: auto;
-	width: 30px;
-	height: 40px;
+	width: 32px;
+	height: 32px;
 }

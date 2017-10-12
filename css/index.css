@@ -73,16 +73,8 @@ a {
     background: #D3CDCE;
 }
 
-.search-input-group {
-    height: 2rem;
-}
-
-.header {
-    height: 3rem;
-}
-
 .carousel-box {
-    margin-top: 3.3rem;
+    margin-top: 5rem;
 }
 
 .carousel-indicators {
