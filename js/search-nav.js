@@ -7,6 +7,6 @@ oSearch.onkeyup = function(event) {
 	localStorage.searchTxt = this.value;
 }
 var oSearchText = document.querySelector(".search-text-img");
-oSearchText.onclick = function(event) {
+oSearchText.touch = function(event) {
 	location.href = 'search.html?search_text=' + localStorage.searchTxt;
 }
