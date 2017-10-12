@@ -1,0 +1,19 @@
+.top-title {
+    height: 4rem;
+    width: 100%;
+    background: #f47920;
+}
+
+.top-title span {
+    display: inline-block;
+    margin: 0 auto;
+    height: 100%;
+    width: 10rem;
+    text-align: center;
+    line-height: 4rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -5rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
