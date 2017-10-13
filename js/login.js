@@ -42,16 +42,16 @@ oBtn.addEventListener("click", function() {
         }
     });
 })
-oPassword.onblur = function() {
+oPassword.onpropertychange = function() {
     if (oPassword.value === "") {
         oPass = false;
     } else {
         oPass = true;
     }
-    chec()
+    chec();
 
 }
-oUsername.onblur = function() {
+oUsername.onpropertychange = function() {
     if (oUsername.value === "") {
         oUser = false;
     } else {
@@ -64,9 +64,8 @@ oUsername.onblur = function() {
 function chec() {
     oForm = oPass && oUser;
     oBtn.disabled = !oForm;
-    console.log(!oForm)
+    console.log(!oForm);
     if (oUsername.value !== "" && oPassword.value !== "") {
-
         oBtn.style.color = "#fff";
     } else {
         oBtn.style.color = "#ccc";

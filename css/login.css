@@ -6,6 +6,11 @@
     text-align: center;
 }
 
+div {
+    width: auto;
+    height: auto;
+}
+
 .tpl {
     width: 20rem;
     height: 3rem;
