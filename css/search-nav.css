@@ -50,13 +50,6 @@ html,body{
 .search-text a img{
 	width: 1.8rem;
 	height: 1.8rem;
-<<<<<<< HEAD
-  filter:alpha(opacity=60);  
-  opacity: 0.6;
-=======
-	filter:alpha(opacity=60);   
-	opacity: 0.6;
->>>>>>> 396e8af7c96d319a8fd4f7635a03d6c307bc8999
 }
 .searchage{
 	margin-top: 1.2rem;
@@ -64,18 +57,8 @@ html,body{
 	float: right;
 	width: 10%;
 	height: 3rem;
-<<<<<<< HEAD
-	filter:alpha(opacity=70);  
-=======
-	filter:alpha(opacity=70);   
->>>>>>> 396e8af7c96d319a8fd4f7635a03d6c307bc8999
-	opacity: 0.7;
 }
 .searchage a img{
 	width: 2.2rem;
 	height: 2.2rem;
-}
-
-.search-list{
-	width: 100%;
 }
