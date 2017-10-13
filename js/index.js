@@ -29,9 +29,28 @@ $(function() {
             $(this).carousel(startX > endX ? 'next' : 'prev');
         }
     })
-
-
+    var lock = true;
+    var timer = setInterval(function() {
+        if (!lock) return;
+        if (oCat != undefined && oCat.innerHTML === "") {
+            indexAjax();
+            lock = false;
+        }
+        //3. 3秒后开锁
+        setTimeout(function() {
+            lock = true;
+        }, 1000);
+    }, 50);
     window.onload = function() {
+        if (!lock) return;
+        indexAjax;
+        setTimeout(function() {
+            lock = true;
+        }, 1000);
+    }
+
+    function indexAjax() {
+
         $.ajax({
             type: "get",
             url: "http://h6.duchengjiu.top/shop/api_cat.php",
@@ -44,6 +63,7 @@ $(function() {
             data: "page=1&pagesize=30",
             success: addImg
         })
+
     }
 
     function addCategory(res) {
@@ -72,31 +92,5 @@ $(function() {
                     </li>`;
         }
     }
-    // console.log(hotGoods);
-    // handleAjax.method('http://h6.duchengjiu.top/shop/api_goods.php?page=1&pagesize=10', "", "get", function(data) {
-    //         if (data.code === 0) {
-    //             console.log(data);
-    //         } else {
-    //             console.log(fail);
-    //         }
-    //     })
-    // .fail(function(resp) {
-    //     console.log(resp);
-    // var json = JSON.parse(resp); //返回的整个json对象
-    // var data = json.data; //json对象当中的data是一个数组
-    // for (var i = 0; i < resp.length; i++) {
-    //     var obj = resp[i]; //数组里面的每一项是一个商品分类的对象
-    //     hotGoods.innerHTML += `
-    //     <div id="hot">
-    //         <li class="hot-li">
-    //             <a href="html/goods.html?goods_id=${obj.goods_id}">
-    //                 <img src="${obj.goods_thumb}" alt="">
-    //                 <span>
-    //                 查看详情
-    //                 </span>
-    //             </a>
-    //         </li>
-    //     </div>`;
-    // }
-    // });
+
 });
