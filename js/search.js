@@ -28,6 +28,7 @@ function getContent() {
 				}, 5000);
 				return;
 			}
+			
 			for(var i = 0; i < data.length; i++) {
 				var obj = data[i];
 				oGoods.innerHTML += `
