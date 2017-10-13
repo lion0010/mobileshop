@@ -30,7 +30,6 @@
                         oLogout.style.display = 'inline';
                         oRegister.style.display = 'none';
                         oLogin.style.display = 'none';
-<<<<<<< HEAD
                     } else {
                         var oRegister = document.querySelector('.register');
                         var oLogin = document.querySelector('.login');
@@ -38,8 +37,6 @@
                         oLogin.style.display = 'inline';
                         var oLogout = document.querySelector('.logout');
                         oLogout.style.display = 'none';
-=======
->>>>>>> 3ff14067419b89941f1e9a9be82ed742dedbf16a
                     }
                 </script>
                 <li id="cart"><a href="javascript:">购物车
@@ -97,12 +94,12 @@
                     }
                     localStorage.searchTxt = this.value;
                 }
-                
+
                 var oSearchText=document.querySelector("#searchText")
                 oSearchText.onclick=function(event){
                 	location.href = 'html/search.html?search_text=' + localStorage.searchTxt;
                 }
-                
+
             </script>
         </div>
     </nav>
