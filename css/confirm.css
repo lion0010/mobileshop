@@ -1,0 +1,47 @@
+.mask {
+    width: 60%;
+    height: 15%;
+    left: 20%;
+    top: 20%;
+    position: absolute;
+    font-size: 16px;
+    background: pink;
+    /*禁止用户选择*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;  
+    border-radius: 8px;
+    text-align: center;
+}
+
+.confirm {
+    width: 100%
+    height: 100%;
+    padding-top: 5rem;
+}
+.confirm-title {
+    width: 100%;
+    color: white; 
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    
+}
+.cancel,.ok {
+    width: 50%;
+    font-size: 1.2rem;
+    color: white;
+  	/*margin-top: 1rem;*/
+  	
+}
+.ok{
+	position: absolute;
+  	top: 50%;
+  	left: 0;
+}
+.cancel{
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+}
+

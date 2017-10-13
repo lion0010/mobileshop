@@ -1,0 +1,69 @@
+.header-box{
+	width: 100%;
+	height: 3rem;
+	background: pink;
+	color: white;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	font-size: 1.5rem;
+}
+.header-box-left{
+	color: white;
+	line-height: 3rem;
+}
+.header-box input{
+	margin-top:0.5rem;
+	height: 2rem;
+	float: right;
+	border: 0;
+	outline: none;
+	background: pink;
+}
+label{
+	display: block;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	width: 100%;
+	height: 3rem;
+	border-bottom: 1px solid pink;
+	margin-top: 1rem;
+	line-height: 3rem;
+}
+.all{
+	display: block;
+	width: 100%;
+	height: 6rem;
+}
+label span{
+	width: 30%;
+	height: 2.5rem;
+	display: inline-block;
+}
+label input{
+	display: inline-block;
+	height: 2.5rem;
+	width: 60%;
+	border: 0;
+	outline: none;
+}
+.moren-address{
+	width: 100%;
+	height: 2rem;
+	color:pink;
+	margin-top: 2rem;
+	padding-left: 1rem;
+	font-size: 1.5rem;
+	padding-right: 1rem;
+	line-height: 2rem;
+}
+.moren-address input{
+	float: right;
+	width: 1.5rem;
+	height: 1.5rem;
+	border: 0;
+	outline: none;
+}
+div,a{
+	height: auto;
+	width: auto;
+}
