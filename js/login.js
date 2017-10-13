@@ -22,7 +22,7 @@ oBtn.addEventListener("click", function() {
         console.log(localStorage.username);
         // alert(json.message)
         if (json.message == "登录成功") {
-            location.href = "../index.html";
+          location.href = "../index.html";
         }
         if (json.message == "用户名不合法，请填写3-20位的英文数字下划线") {
             toast("用户名格式不正确，请填写3-20位的英文数字组成的用户名格式")
@@ -42,7 +42,7 @@ oBtn.addEventListener("click", function() {
         }
     });
 })
-oPassword.onpropertychange = function() {
+oPassword.onkeyup = function() {
     if (oPassword.value === "") {
         oPass = false;
     } else {
@@ -51,7 +51,7 @@ oPassword.onpropertychange = function() {
     chec();
 
 }
-oUsername.onpropertychange = function() {
+oUsername.onkeyup = function() {
     if (oUsername.value === "") {
         oUser = false;
     } else {

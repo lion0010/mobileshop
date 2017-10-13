@@ -54,7 +54,6 @@ $(function() {
         $.ajax({
             type: "get",
             url: "http://h6.duchengjiu.top/shop/api_cat.php",
-            data: "page=1&pagesize=30",
             success: addCategory
         })
         $.ajax({
@@ -68,6 +67,7 @@ $(function() {
 
     function addCategory(res) {
         var data = res.data; //json对象当中的data是一个数组
+        var arr = [""]
         for (var i = 0; i < data.length; i++) {
             var obj = data[i]; //数组里面的每一项是一个商品分类的对象
             oCat.innerHTML += `<li class="category-list"><a href="html/list.html?cat_id=${obj.cat_id}">${obj.cat_name}</a></li>`;
@@ -92,5 +92,22 @@ $(function() {
                     </li>`;
         }
     }
+});
 
+$(function() {
+    //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+    $(function() {
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 100) {
+                $("#backtotop").fadeIn(1500);
+            } else {
+                $("#backtotop").fadeOut(1500);
+            }
+        });
+        //当点击跳转链接后，回到页面顶部位置
+        $("#backtotop").click(function() {
+            $('body,html').animate({ scrollTop: 0 }, 1000);
+            return false;
+        });
+    });
 });
