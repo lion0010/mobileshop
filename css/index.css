@@ -62,6 +62,7 @@ td {
 
 body {
     background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+    height: auto;
 }
 
 a {
@@ -140,6 +141,10 @@ div {
 
 .hot-li>a {
     display: inline-block;
+    width: 100%;
+}
+
+.hot-li>a>img {
     width: 80%;
 }
 
