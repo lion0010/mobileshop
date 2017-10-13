@@ -1,0 +1,256 @@
+header{
+	width:100%;
+	height:5rem;
+}
+.header{
+	width:100%;
+	height:5rem;
+	background:deeppink;
+	position:fixed;
+	top:0px;
+	/*z-index:9;*/
+}
+.no1 .prev{
+	width:1.5rem;
+	height:1.5rem;
+	position:absolute;
+	top:1.75rem;
+	left:2rem;
+}
+.no2{
+	position:absolute;
+	color:white;
+	font-size:1.8rem;
+	top:1.3rem;
+	left:14rem;
+}
+.no3{
+	font-size:1.6rem;
+	color:white;
+	position:absolute;
+	top:1.5rem;
+	left:29.5rem;
+}
+
+
+section{
+	width:100%;
+	overflow:hidden;
+}
+main {
+   width:100%;
+   height:100%; 
+   overflow:hidden;
+ }
+table{
+	overflow:hidden;
+}
+tr{
+   float:left;
+   width:100%;
+   height:10rem;
+   background: #fcfcfc;
+   border: 0.1rem solid #ccc;
+   margin-top:2rem;
+}
+
+ /*td{
+   width: 1.7rem;
+   padding: 1rem;
+   vertical-align: middle;
+   color: dodgerblue;
+ }*/
+
+ .goodsId{
+ 	float:left;
+ 	margin-left:-1rem;
+ 	margin-top:3.2rem;
+ }
+.goods-Id{
+ 	width:2rem;
+ 	height:2rem;
+ 	float:left;
+ 	margin-left:2rem;
+ 	margin-top:1.4rem;
+ }
+  .goodsName{
+ 	width:18rem;
+ 	/*height:7rem;*/
+ 	float:left;
+ 	margin-left:12rem;
+ 	margin-top:-7rem;
+ }
+ .goods-thumb{
+ 	width:7rem;
+ 	height:7rem;
+ 	float:left;
+ 	margin-left:4rem;
+ 	margin-top:-5.3rem;
+ }
+ .price{
+ 	/*width:7rem;
+ 	height:7rem;*/
+ 	color:red;
+ 	float:left;
+ 	margin-left:12rem;
+ 	margin-top:-2.3rem;
+ }
+ .Number{
+ 	width:7rem;
+ 	height:7rem;
+ 	float:left;
+ 	margin-left:20rem;
+ 	margin-top:-3.6rem;
+ }
+ .less,.add{
+    width:25px;
+    height:25px;
+    margin: 0;
+    text-align: center;
+    line-height: 100%;
+    border: none;
+    outline: none;
+}
+.inputnum{
+    width:25px;
+    height: 25px;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    outline: none;
+}
+.deleteInput{
+ 	float:left;
+ 	margin-left:16rem;
+ 	margin-top:-3.6rem;
+}
+.delete{
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: dodgerblue;
+	background: #fcfcfc;
+	width: 120px;
+	text-align: center;
+	float: left;
+}
+.delete-one{
+   float:left;
+   margin-top:3rem;
+   margin-left:0rem;
+   background: #e5e5e5;
+   font-size:1.6rem;
+}
+#deleteSelete{
+   color:white;
+   width:7rem;
+   line-height:3rem;
+   background:orange;
+   float:left;
+   margin-top:3rem;
+   margin-left:0rem;
+   font-size:1.6rem;
+   text-align:center;
+}
+#clear-cart{
+   color:white;
+   width:12rem;
+   line-height:3rem;
+   background:orange;
+   float:left;
+   margin-top:3rem;
+   margin-left:15rem;
+   font-size:1.6rem;
+   text-align:center;
+ }
+
+/*.pink-color{
+ 	color: #FF3366;
+ 	padding-left: 40px;
+ }*/
+
+footer{
+	width:100%;
+	height:5rem;
+	background:purple;
+	position:fixed;
+	bottom:0px;
+}
+/*.delete-two{
+   float:left;
+   margin-top:4rem;
+   margin-left:0rem;
+   background: #e5e5e5;
+   font-size:1.6rem;	
+ }*/
+
+#total{
+	position:absolute;
+	top:0rem;
+	left:0rem;
+	font-size:1.8rem;
+	background:floralwhite;
+	color:black;
+	text-align:center;
+	width:35%;
+	line-height:5rem;
+}
+ #sum{
+   color:white;
+   width:20%;
+   line-height:5rem;
+   background:orange;
+   float:left;
+   margin-top:0rem;
+   margin-left:11.9rem;
+   font-size:1.6rem;
+   text-align:center;
+ }
+ #order {
+   color:white;
+   width:45%;
+   height:5rem;
+   line-height:5rem;
+   background:orange;
+   float:left;
+   margin-top:0rem;
+   margin-left:0rem;
+   font-size:1.6rem;
+   text-align:center;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
