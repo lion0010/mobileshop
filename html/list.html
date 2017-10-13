@@ -1,59 +1,71 @@
 <!DOCTYPE html>
 <html lang="zh">
 
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/search-nav.css"/>
     <link rel="stylesheet" type="text/css" href="../css/list.css" />
+    <style type="text/css">
+   
+    </style>
     <title>商品列表</title>
-</head>
+  </head>
 
-<body>
-    <script src="../js/myajax.js" type="text/javascript" charset="utf-8"></script>
+  <body>
+    
+    <div class="input-group search-input-group navbar-fixed-top top-search"
+ id="input-group">
+      <div class="search-nav">
+        <div id="return1" class="return1">
+          <a href="index.html">
+            <img src="../img/tao.gif" />
+          </a>
+        </div>
+        <div id="searchText" class="search-text">
+          <input id="search" type="text" placeholder="寻找喜爱的宝贝店铺">
+          <a class="search-text-img" href="javascript:">
+            <img id="searchText" src="../img/search1.png" />
+          </a>
+        </div>
+        <div id="searchPage" class="searchage">
+          <a href="index.html ">
+            <img src="../img/return2.png" />
+          </a>
+        </div>
+      </div>
+    </div>
+        <div class="nav-list"></div>        
+    
     <div class="nav-list">
-        <ul id="cat" class="cat"></ul>
-        <script src="../js/list.js"></script>
+      <ul id="cat" class="cat"></ul>
     </div>
     <div class="goods-list">
-        <ul id="hot-goods"></ul>
-        <script type="text/javascript">
-            var oGoods = document.querySelector('#hot-goods');
-            var cat_id = getQueryString("cat_id");
-            myajax.get('http://h6.duchengjiu.top/shop/api_goods.php', {
-                cat_id: cat_id,
-                pagesize: '100'
-            }, function(error, responseText) {
-                var json = JSON.parse(responseText); //返回的整个json对象
-                var data = json.data; //json对象当中的data是一个数组
-                for (var i = 0; i < data.length; i++) {
-                    var obj = data[i]; //数组里面的每一项是一个商品分类的对象
-                    oGoods.innerHTML += `<div id="hot"><li><a href="goods.html?goods_id=${obj.goods_id}"><img src="${obj.goods_thumb}"/> <p>${obj.goods_name} </p><span>¥ ${obj.price}</span></a></li></div>`;
-                }
-            });
-        </script>
+      <ul id="hot-goods"></ul>
     </div>
     <nav class="navbar-fixed-bottom bottom-account">
-        <div class="bottom-btn btn-home">
-            <a href=""></a>
-        </div>
-        <div class="bottom-btn btn-cart">
-            <a href=""></a>
-        </div>
-        <div class="bottom-btn btn-account">
-            <a href="account.html"></a>
-        </div>
+      <div class="bottom-btn btn-home">
+        <a href=""></a>
+      </div>
+      <div class="bottom-btn btn-cart">
+        <a href=""></a>
+      </div>
+      <div class="bottom-btn btn-account">
+        <a href="account.html"></a>
+      </div>
     </nav>
     <!--回到顶部-->
     <div id="backto">
-        <a href="javascript:;" class="backtotop" id="backtotop"><img src="../images/top.png" /></a>
+      <a href="javascript:;" class="backtotop" id="backtotop"><img src="../img/top.png" /></a>
     </div>
-    <script src="../js/backtotop.js" type="text/javascript" charset="utf-8"></script>
-    <script>
-        var backtotop = new BackToTop('#backtotop');
-    </script>
-</body>
+    <script src="../js/myajax.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/backtotop.js" type="text/javascript" charset="utf-8"></script>  
+    <script src="../js/list.js"></script>
+    <script type="text/javascript" src="../js/search-nav.js"></script>
+  </body>
 
 </html>
