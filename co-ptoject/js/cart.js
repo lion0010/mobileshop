@@ -111,6 +111,7 @@ function getSum() {
     }
     localStorage.sum = sum;
     oSum.innerText = "￥" + sum;
+    console.log(oSums);
 }
 //清空购物车
 var oClearCart = document.querySelector('#clear-cart');
