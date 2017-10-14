@@ -4,17 +4,11 @@ oPrev.addEventListener("touchstart", function(event) {
         event.preventDefault(); // 阻止浏览器默认事件，重要 
         var touch = event.targetTouches[0];
         // 把元素放在手指所在的位置
-<<<<<<< HEAD
 	window.history.back();
        };
       
 },false)
-=======
-        window.history.back();
-    };
->>>>>>> a4bfd7f503d6112b2c99e1ee948676392fc3518a
 
-}, false)
 
 var oShopping = document.querySelector(".shopping");
 oShopping.addEventListener("touchstart", function(event) {
@@ -36,7 +30,6 @@ oMenu.addEventListener("touchstart", function(event) {
         var touch = event.targetTouches[0];
         // 把元素放在手指所在的位置
         //oListTwo.style.display="block";
-<<<<<<< HEAD
         oListTwo.slideToggle(500);   
       };      
 },false)
