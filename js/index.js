@@ -6,8 +6,8 @@ $(function() {
     var startX, endX;
     // 在滑动的一定范围内，才切换图片
     var offset = 50;
-    var hotGoods = document.getElementById('goods-container');
-    var oCat = document.getElementById('category-lists');
+    var hotGoods = document.getElementById('hot-goods');
+    var oCat = document.getElementById('cat');
     console.log(hotGoods);
     // 注册滑动事件
     $carousels.on('touchstart', function(e) {
@@ -82,18 +82,21 @@ $(function() {
         for (var i = 0; i < data.length; i++) {
             var obj = data[i]; //数组里面的每一项是一个商品分类的对象
             hotGoods.innerHTML += `
-                    <li class="hot-li">
+                <div id="hot">
+                    <li>
                         <a href="html/goods.html?goods_id=${obj.goods_id}">
                             <img src="${obj.goods_thumb}" alt="">
+                            <p>${obj.goods_name}</p><span>¥ ${obj.price}</span>
                             <span>
                             查看详情
                             </span>
                         </a>
-                    </li>`;
+                    </li>
+                </div>`;
         }
     }
-});
 
+});
 $(function() {
     //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
     $(function() {

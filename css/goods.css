@@ -167,10 +167,48 @@ footer{
 	left:24.1rem;
 	font-size:1.8rem;
 	background:red;
-	color:white;
+	
 	width:30%;
 	line-height:5rem;
 	text-align:center;
+}
+.buy a{
+	color:white;
+}
+.toast {
+    width: 200px;
+    height: 4rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    padding: 10px 5px;
+    background: #000;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    color: #fff;
+}
+
+@media screen and (min-width:412px) {
+    .toast {
+        top: 45%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .toast {
+        top: 45%;
+        left: 50%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .toast {
+        top: 40%;
+    }
 }
 
 

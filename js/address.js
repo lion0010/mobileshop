@@ -1,3 +1,13 @@
+var oPrev = document.querySelector(".prev");
+oPrev.addEventListener("touchstart", function(event) {
+    if (event.targetTouches.length == 1) {　　　　
+        event.preventDefault(); // 阻止浏览器默认事件，重要 
+        var touch = event.targetTouches[0];
+        // 把元素放在手指所在的位置
+        window.history.back();
+    };
+
+}, false);
 //ajax读取到收货地址并显示
 function showAddress() {
     myajax.get('http://h6.duchengjiu.top/shop/api_useraddress.php', {
