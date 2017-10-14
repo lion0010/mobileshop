@@ -12,6 +12,6 @@ quit.addEventListener("touchstart", function(event) {
         var touch = event.targetTouches[0];
         // 把元素放在手指所在的位置
         localStorage.clear();
-        window.location.href = "/git/mobileshop/html/account.html"
+        window.location.href = "/git/mobileshop/html/register-login.html"
     };
 })

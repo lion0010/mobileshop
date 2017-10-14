@@ -61,7 +61,7 @@ td {
 }
 
 body {
-    background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+    /* background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%); */
     height: auto;
 }
 
@@ -102,7 +102,6 @@ div {
     line-height: 3rem;
     box-sizing: border-box;
     float: left;
-    font-size: 20px;
     border-right: 1px solid #fff;
     margin-top: .3rem;
 }
@@ -154,7 +153,7 @@ div {
     width: 2rem;
     float: right;
     height: 100%;
-    font-size: 1.9rem;
+    /* font-size: 1.9rem; */
     font-family: 微软雅黑;
     color: #fff;
 }
@@ -192,4 +191,16 @@ div {
 
 .btn-home>a {
     background: url(../img/home.png)no-repeat;
+}
+
+.nav-list .index-cat {
+    background: #fff;
+}
+
+.nav-list .index-cat li a {
+    color: #000;
+}
+
+#hot-goods div li p {
+    padding: 0;
 }
