@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>订单管理</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <script src="../myajax.js"></script>
+    <script src="../js/myajax.js"></script>
     <style>
        html,body{
             height: 100%;
@@ -114,7 +114,7 @@
             display: flex;
         }
         #order li .goods-text-top img{
-            width: 20%;
+            width: 6.6rem;
             height: 6.6rem;
             border: 1px solid black;
             border-radius: 50%;
@@ -291,6 +291,16 @@
                 }
             }, false);
         }
+
+        var oFanhui=document.querySelector(".header-top-left");
+        oFanhui.addEventListener('touchstart', function(event) {
+            if (event.targetTouches.length == 1) {
+                event.preventDefault();
+                var touch = event.targetTouches[0];
+                window.history.back(-1);
+            }
+        }, false);
+
     </script>
 </body>
 </h
