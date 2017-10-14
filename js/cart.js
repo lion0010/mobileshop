@@ -7,16 +7,14 @@ oPrev.addEventListener("touchstart",function(event){
       };     
 },false)
 
-
 var oTable = document.querySelector('table');
 var oSum = document.querySelector('#sum');
 var oTr;
-myajax.get('http://h6.duchengjiu.top/shop/api_cart.php', 
-          { token: localStorage.token }, function(err, responseText) {
-          var json = JSON.parse(responseText);
-          console.log(json);
-          var data = json.data;
-     for (var i = 0; i < data.length; i++) {
+myajax.get('http://h6.duchengjiu.top/shop/api_cart.php', { token: localStorage.token }, function(err, responseText) {
+    var json = JSON.parse(responseText);
+    console.log(json);
+    var data = json.data;
+    for (var i = 0; i < data.length; i++) {
         var obj = data[i];
         //一件商品的总价
         obj.goods_sum = obj.goods_price * obj.goods_number;
@@ -25,15 +23,15 @@ myajax.get('http://h6.duchengjiu.top/shop/api_cart.php',
                             <td name="goods_id" class="goodsId"><input type="checkbox" name="select" data-id="${obj.goods_id}" class="goods-Id"></td>
                             <td><img src="${obj.goods_thumb}" class="goods-thumb"></td>
                             <td class="goodsName" name="goods_name">${obj.goods_name}</td>
-                            <td class="price">¥ ${obj.goods_price}</td>
+                            <td class="price">${obj.goods_price}</td>
                             <td class="Number"><button class="less" name="minus">-</button><input data-id="${obj.goods_id}" class="inputnum" name="number" min="1" max="10"  value="${obj.goods_number}" /><button name="add" class="add">+</button></td>
-     
+                            <span class="alls">总计</span><td name="sum" class="sum">${obj.goods_sum}</td>
                             <td class="deleteInput"><input data-id="${obj.goods_id}" name="delete" value="删除" class="delete"/></td>
                           </tr>
                           `;
         getSum();
     }
-    oTable.addEventListener('click', function(event) {
+    oTable.addEventListener('touchstart', function(event) {
         event = event || window.event;
         var target = event.target || event.srcElement;
         console.log(target);
@@ -60,6 +58,7 @@ myajax.get('http://h6.duchengjiu.top/shop/api_cart.php',
                     }
                 })
         } else if (target.name === 'minus') {
+        	if(target.nextElementSibling.value==="1"){return;}
             target.nextElementSibling.value = parseInt(target.nextElementSibling.value) - 1;
             var goods_id = target.nextElementSibling.dataset.id;
             //得到商品的数量
@@ -84,9 +83,9 @@ myajax.get('http://h6.duchengjiu.top/shop/api_cart.php',
         }
         console.log(target.value, target.dataset.id);
         //得到商品的ID
-    });
+    },false);
 });
-oTable.addEventListener('click', function(event) {
+oTable.addEventListener('touchstart', function(event) {
     event = event || window.event;
     var target = event.target || event.srcElement;
     if (target.name === 'delete') {
@@ -112,7 +111,7 @@ oTable.addEventListener('click', function(event) {
             return;
         })
     }
-});
+},false);
 //显示总价
 function getSum() {
     var oSums = document.querySelectorAll('td[name=sum]');
@@ -122,6 +121,7 @@ function getSum() {
     }
     localStorage.sum = sum;
     oSum.innerText = "￥" + sum;
+    console.log(oSums);
 }
 //清空购物车
 var oClearCart = document.querySelector('#clear-cart');
@@ -157,12 +157,6 @@ oClearCart.onclick = () => {
     })
 
 }
-
-
-
-
-
-
 
 
 

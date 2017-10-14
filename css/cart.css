@@ -1,3 +1,6 @@
+body{
+	height:auto;
+}
 header{
 	width:100%;
 	height:5rem;
@@ -9,59 +12,113 @@ header{
 	position:fixed;
 	top:0px;
 	/*z-index:9;*/
+	display:flex;
+}
+.no1{
+	width:25%;
 }
 .no1 .prev{
-	width:1.5rem;
-	height:1.5rem;
-	position:absolute;
-	top:1.75rem;
-	left:2rem;
+	width:2rem;
+	height:2rem;
+	margin-top:1.5rem;
+	margin-left:1rem;
+	text-align:center;
 }
 .no2{
-	position:absolute;
+	width:50%;
+	margin-top:1.2rem;
 	color:white;
 	font-size:1.8rem;
-	top:1.3rem;
-	left:14rem;
+	text-align:center;
 }
 .no3{
+	width:25%;
+	margin-top:1.5rem;
 	font-size:1.6rem;
 	color:white;
-	position:absolute;
-	top:1.5rem;
-	left:29.5rem;
+	text-align:center;
 }
 
-
-section{
-	width:100%;
-	overflow:hidden;
-}
 main {
-   width:100%;
+   width: 100%;
    height:100%; 
    overflow:hidden;
  }
-table{
+ table{
 	overflow:hidden;
 }
 tr{
    float:left;
+   margin-top:2rem;
    width:100%;
    height:10rem;
    background: #fcfcfc;
-   border: 0.1rem solid #ccc;
-   margin-top:2rem;
+   overflow:hidden;
 }
-
- /*td{
-   width: 1.7rem;
-   padding: 1rem;
-   vertical-align: middle;
-   color: dodgerblue;
- }*/
-
- .goodsId{
+.tr-header{
+	width:100%;
+	height:3rem;
+	display:flex;
+	justify-content: space-around;
+}
+.chooses{
+	float:left;
+	width:2rem;
+	height:1.5rem;
+	background:red;
+	margin-left:0rem;
+	margin-top:0rem;
+}
+.imgs{
+	float:left;
+	width:2rem;
+	height:1.5rem;
+	background:red;
+	margin-left:0rem;
+	margin-top:0rem;
+	
+}
+.names{
+	float:left;
+	width:2rem;
+	height:1.5rem;
+	background:green;
+	margin-left:0rem;
+	margin-top:0rem;
+}
+.values{
+	float:left;
+	width:2rem;
+	height:1.5rem;
+	background:red;
+	margin-left:0rem;
+	margin-top:0rem;
+}
+.nums{
+	float:left;
+	width:2rem;
+	height:1.5rem;
+	background:blue;
+	margin-left:0rem;
+	margin-top:0rem;
+}
+.totals{
+	float:left;
+	width:2rem;
+	height:1.5rem;
+	background:red;
+	margin-left:0rem;
+	margin-top:0rem;
+}
+.operate{
+	float:left;
+	width:2rem;
+	height:1.5rem;
+	background:yellow;
+	margin-left:0rem;
+	margin-top:0rem;
+}
+.goodsId{
  	float:left;
  	margin-left:-1rem;
  	margin-top:3.2rem;
@@ -71,36 +128,37 @@ tr{
  	height:2rem;
  	float:left;
  	margin-left:2rem;
- 	margin-top:1.4rem;
+ 	margin-top:0.5rem;
  }
   .goodsName{
  	width:18rem;
- 	/*height:7rem;*/
+ 	font-size:1.2rem;
  	float:left;
  	margin-left:12rem;
- 	margin-top:-7rem;
+ 	margin-top:-12rem;
  }
  .goods-thumb{
  	width:7rem;
  	height:7rem;
  	float:left;
  	margin-left:4rem;
- 	margin-top:-5.3rem;
+ 	margin-top:-11.9rem;
  }
  .price{
- 	/*width:7rem;
- 	height:7rem;*/
+ 	font-size:1.3rem;
+ 	width:7rem;
+ 	height:1.5rem;
  	color:red;
  	float:left;
  	margin-left:12rem;
- 	margin-top:-2.3rem;
+ 	margin-top:-7.3rem;
  }
  .Number{
- 	width:7rem;
- 	height:7rem;
+ 	width:6.3rem;
+ 	height:2.1rem;
  	float:left;
- 	margin-left:20rem;
- 	margin-top:-3.6rem;
+ 	margin-left:23rem;
+ 	margin-top:-8.5rem;
  }
  .less,.add{
     width:25px;
@@ -121,18 +179,20 @@ tr{
 }
 .deleteInput{
  	float:left;
- 	margin-left:16rem;
- 	margin-top:-3.6rem;
+ 	width:5rem;
+ 	height:2rem;
+ 	margin-left:12rem;
+ 	margin-top:-9.6rem;
 }
 .delete{
 	border: none;
 	outline: none;
-	cursor: pointer;
 	color: dodgerblue;
 	background: #fcfcfc;
-	width: 120px;
+	width: 5rem;
 	text-align: center;
-	float: left;
+	margin-left:0rem;
+ 	margin-top:4.4rem;
 }
 .delete-one{
    float:left;
@@ -152,6 +212,32 @@ tr{
    font-size:1.6rem;
    text-align:center;
 }
+.sub{
+	float:left;
+	margin-top:-2rem;
+	margin-left:25rem;
+}
+.sum{
+	float:left;
+	width:3rem;
+	height:2rem;
+	
+   margin-top:-5.5rem;
+   margin-left:26rem;
+   color:orange;
+   font-size:1.3rem;
+   text-align:center;
+}
+.alls{
+   float:left;
+   width:3rem;
+   height:2rem;
+   margin-top:-2.3rem;
+   margin-left:22.5rem;
+   color:orange;
+   font-size:1.3rem;
+   text-align:center;
+}
 #clear-cart{
    color:white;
    width:12rem;
@@ -159,71 +245,55 @@ tr{
    background:orange;
    float:left;
    margin-top:3rem;
-   margin-left:15rem;
+   margin-left:0rem;
    font-size:1.6rem;
    text-align:center;
  }
 
-/*.pink-color{
- 	color: #FF3366;
- 	padding-left: 40px;
- }*/
+
 
 footer{
+	width:100%;
+	height:5rem;
+}
+.footer{
 	width:100%;
 	height:5rem;
 	background:purple;
 	position:fixed;
 	bottom:0px;
+	display:flex;
 }
-/*.delete-two{
-   float:left;
-   margin-top:4rem;
-   margin-left:0rem;
-   background: #e5e5e5;
-   font-size:1.6rem;	
- }*/
-
 #total{
-	position:absolute;
-	top:0rem;
-	left:0rem;
-	font-size:1.8rem;
+	width:30%;
+	height:5rem;	
 	background:floralwhite;
 	color:black;
 	text-align:center;
-	width:35%;
-	line-height:5rem;
+	font-size:1.8rem;
+	padding-top:1rem;
+	margin-left:0rem;
 }
  #sum{
-   color:white;
-   width:20%;
-   line-height:5rem;
-   background:orange;
-   float:left;
-   margin-top:0rem;
-   margin-left:11.9rem;
-   font-size:1.6rem;
-   text-align:center;
- }
- #order {
-   color:white;
-   width:45%;
+   width:25%;
    height:5rem;
-   line-height:5rem;
-   background:orange;
-   float:left;
-   margin-top:0rem;
+   background:floralwhite;
+   color:orange;
+   padding-top:1.4rem;
    margin-left:0rem;
    font-size:1.6rem;
    text-align:center;
  }
-
-
-
-
-
-
+ #order { 
+   width:45%;
+   height:5rem;
+   background:purple;
+   color:white;
+   padding-top:1.4rem;
+   margin-left:0rem;
+   font-size:1.6rem;
+   text-align:center;
+ }
 
 
 
