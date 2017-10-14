@@ -2,17 +2,21 @@ html,body{
 	width: 100%;
 	height: 100%;
 }
+
+.search-list{
+	width: 100%;
+}
 ul li{
 	width: 100%;
 	height: 10rem;
-	background-color: #f9f9f9;
-	border-bottom: 1px solid #666;
+	background-color: #fff;
+	border-bottom: 0.2rem solid #E6E6E6;
 	overflow: hidden;
 }
 .product{
 	width: 100%;
 	height: 8rem;
-	margin: 0.5rem;
+	margin: 0.8rem;
 }
 .product>div{
 	float: left;
@@ -27,18 +31,17 @@ ul li{
 }
 .product-particulars{
 	margin-left: 0.5rem;
-	width: 67%;
+	width: 70%;
 }
 .product-particulars p{
 	margin-bottom: 0.5rem;
 	display: block;
 	margin-top: 0.2rem;
 	width: 100%;
-	font-weight: 600;
 	color: #4b566a;
 	
 	display: -webkit-box;    /*1.设置display类型为-webkit-box*/
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 22px;
     overflow: hidden;        /*2.设置元素超出隐藏*/
     text-overflow: ellipsis; /*3.设置超出样式为省略号*/
