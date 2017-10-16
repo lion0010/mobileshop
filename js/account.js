@@ -12,11 +12,8 @@ quit.addEventListener("touchstart", function(event) {
         var touch = event.targetTouches[0];
         // 把元素放在手指所在的位置
         localStorage.clear();
-<<<<<<< HEAD
         window.location.href = "register-login.html"
-=======
         window.location.href = "/git/mobileshop/html/register-login.html"
->>>>>>> 9d4c54a2412d29994de22a5613e1c2e759b34a3d
     };
 });
 var orderBtn = document.getElementById('btn-order');

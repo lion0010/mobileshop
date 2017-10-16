@@ -20,7 +20,6 @@
         oMask.appendChild(oDiv);
 
         var oTitle = createElement('div', txt);
-<<<<<<< HEAD
         oTitle.className = 'confirm-title';
         oDiv.appendChild(oTitle);
 
@@ -29,7 +28,6 @@
       oBtnOK.innerText = "确定";
       oBtnOK.className = 'ok';
       oDiv.appendChild(oBtnOK);
-=======
         oTitle.className = 'title';
         oDiv.appendChild(oTitle);
 
@@ -38,7 +36,6 @@
         oBtnOK.innerText = "确定";
         oBtnOK.className = 'ok';
         oDiv.appendChild(oBtnOK);
->>>>>>> 9d4c54a2412d29994de22a5613e1c2e759b34a3d
 
         var oBtnCancel = document.createElement('span');
         oBtnCancel.flag = 'cancel';
