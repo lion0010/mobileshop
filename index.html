@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>商城首页</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/search-nav.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/list.css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/handleAjax.js"></script>
@@ -77,37 +77,39 @@
             </div>
         </div>
     </div>
-    <div class="category container-fluid">
-        <div class="container-fluid title">
+    <div class="nav-list">
+        <!-- <div class="container-fluid title">
             <h3>商品分类</h3>
-        </div>
-        <ul id="category-lists">
-
-        </ul>
+        </div> -->
+        <ul id="cat" class="cat index-cat"></ul>
     </div>
-    <div class="hot">
-        <div class="container-fluid title">
+    <div class="goods-list">
+        <!-- <div class="container-fluid title">
             <h3>热门商品</h3>
-        </div>
+        </div> -->
         <div class="hot-box">
-            <ul id="goods-container">
-
-            </ul>
+            <ul id="hot-goods"></ul>
         </div>
     </div>
+    <!-- <div class="nav-list">
+        <ul id="cat" class="cat"></ul>
+    </div> -->
+    <!-- <div class="goods-list">
+        <ul id="hot-goods"></ul>
+    </div> -->
     <nav class="navbar-fixed-bottom bottom-account">
-        <div class="bottom-btn btn-home">
+        <div class="bottom-btn btn-home" id="btn-home">
             <a href=""></a>
         </div>
-        <div class="bottom-btn btn-cart">
+        <div class="bottom-btn btn-cart" id="btn-cart">
             <a href=""></a>
         </div>
-        <div class="bottom-btn btn-account">
-            <a href="html/account.html"></a>
+        <div class="bottom-btn btn-account" id="btn-account">
+            <a href="html/register-login.html"></a>
         </div>
     </nav>
     <div id="backto">
-        <a href="javascript:;" class="backtotop" id="backtotop"><img src="../img/top.png" /></a>
+        <a href="javascript:;" class="backtotop" id="backtotop"><img src="img/top.png" /></a>
     </div>
 </body>
 <!--搜索导航-->
@@ -128,5 +130,6 @@
         location.href = 'html/search.html?search_text=' + localStorage.searchTxt;
     }
 </script>
+<script src="js/3-bottom.js"></script>
 
 </html>

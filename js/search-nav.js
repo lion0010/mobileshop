@@ -6,7 +6,14 @@ oSearch.onkeyup = function(event) {
   }
   localStorage.searchTxt = this.value;
 }
-var oSearchText = document.querySelector(".search-text-img");
-oSearchText.touch = function(event) {
-  location.href = 'search.html?search_text=' + localStorage.searchTxt;
+/*var oSearchText = document.querySelector(".search-text-img");
+oSearchText.onclick = function(event) {
+location.href = 'search.html?search_text=' + localStorage.searchTxt;
+}*/
+$(function(){
+	document.addEventListener("touchstart", _touch, false);
+})
+function _touch(event){
+	var oSearchText = document.querySelector(".search-text-img");
+  oSearchText.href = 'search.html?search_text=' + localStorage.searchTxt;
 }

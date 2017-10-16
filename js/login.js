@@ -42,7 +42,7 @@ oBtn.addEventListener("click", function() {
         }
     });
 })
-oPassword.onpropertychange = function() {
+oPassword.onkeyup = function() {
     if (oPassword.value === "") {
         oPass = false;
     } else {
@@ -51,7 +51,7 @@ oPassword.onpropertychange = function() {
     chec();
 
 }
-oUsername.onpropertychange = function() {
+oUsername.onkeyup = function() {
     if (oUsername.value === "") {
         oUser = false;
     } else {
