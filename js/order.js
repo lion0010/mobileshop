@@ -1,7 +1,7 @@
 var oPrev = document.querySelector(".header-top-left");
 oPrev.addEventListener("touchstart", function(event) {
     if (event.targetTouches.length == 1) {　　　　
-        event.preventDefault(); // 阻止浏览器默认事件，重要 
+        event.preventDefault(); // 阻止浏览器默认事件，重要
         var touch = event.targetTouches[0];
         // 把元素放在手指所在的位置
         window.history.back();
@@ -80,7 +80,7 @@ oOrder.addEventListener("touchstart", function(event) {
 			function(){
 				return;
 			});
-		})	
+		})
 	}
 }, false)
 var oLi = document.querySelector('.header-bottom').querySelectorAll("li");
